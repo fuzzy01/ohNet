@@ -269,6 +269,11 @@ ifeq ($(platform), Vanilla)
 	openhome_system = Linux
 endif
 
+ifeq ($(openhome_architecture), armhf)
+	native_only = yes
+endif
+
+
 # Macros used by Common.mak
 native_only ?= no
 managed_only ?= no
